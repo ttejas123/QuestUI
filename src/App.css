@@ -1,0 +1,15 @@
+.appBG{
+	background-image: url("./assets/Background.png");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.gameRankCard{
+	width: 60%;
+	height: 80vh;
+	overflow-y: scroll;
+}
