@@ -12,6 +12,13 @@
 	/*height: 100vh;*/
 	/*overflow: hidden;*/
 	overflow-y: scroll;
+	position: relative;
+	/*width: 432px;*/
+	/*height: 624px;*/
+	/*left: 0px;*/
+	/*top: 1px;*/
+
+	/*filter: drop-shadow(14px 6px 0px #3D240B);*/
 }
 
 .main_player_card_container{
@@ -97,10 +104,17 @@ color: #FFFFFF;
 
 }
 
+.img_CSS{
+	height: 500px;
+}
+
 .left_card_block{
-	flex: 0.3;
+	/*background: linear-gradient(180deg, rgba(58, 55, 67, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);*/
+	flex: 0.35;
+	filter: drop-shadow(12px 6px 0px #3D240B);
+	background-size: cover
 }
 
 .right_card_block{
-	flex: 0.7;
+	flex: 0.65;
 }
