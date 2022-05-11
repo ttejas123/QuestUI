@@ -96,3 +96,11 @@ margin-bottom: 10px;
 color: #FFFFFF;
 
 }
+
+.left_card_block{
+	flex: 0.3;
+}
+
+.right_card_block{
+	flex: 0.7;
+}
