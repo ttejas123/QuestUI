@@ -1,100 +1,32 @@
-// import logo from './logo.svg';
-import './App.css';
-import GameRankCard from './gameRankCard'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import img1 from './assets/1.png'
-import img2 from './assets/2.png'
-import img3 from './assets/3.png'
-
-import img4 from './assets/4.png'
-import img5 from './assets/5.png'
-import img6 from './assets/6.png'
-
+// compoents
+import QuestBoard from './pages/questBord.js'
+import GoblinAttack from './pages/GoblinAttack.js'
+import Questsucess from './pages/QuestSucess.js'
+import QuestGreatsucess from './pages/QuestGreatSucess.js'
+import QuestFailure from './pages/QuestFailure.js'
+import QuestProgress from './pages/QuestInProgress.js'
+// routing
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+// minimum css
+import './App.css'
+import React, {Fragment} from 'react';
 function App() {
-  const dataTosend = [
-    {
-      name: "Commoner",
-      rank: 21,
-      src: img1,
-      number: 122
-    },
-    {
-      name: "Apprentice",
-      rank: 23,
-      src: img2,
-      number: 211
-    },
-    {
-      name: "Champion",
-      rank: 22,
-      src: img3,
-      number: 322
-    },
-    {
-      name: "Commoner",
-      rank: 21,
-      src: img4,
-      number: 122
-    },
-    {
-      name: "Apprentice",
-      rank: 23,
-      src: img5,
-      number: 211
-    },
-    {
-      name: "Champion",
-      rank: 22,
-      src: img6,
-      number: 322
-    },
-    {
-      name: "Commoner",
-      rank: 21,
-      src: img1,
-      number: 122
-    },
-    {
-      name: "Apprentice",
-      rank: 23,
-      src: img2,
-      number: 211
-    },
-    {
-      name: "Champion",
-      rank: 22,
-      src: img3,
-      number: 322
-    },
-    {
-      name: "Commoner",
-      rank: 21,
-      src: img1,
-      number: 122
-    },
-    {
-      name: "Apprentice",
-      rank: 23,
-      src: img2,
-      number: 211
-    },
-    {
-      name: "Champion",
-      rank: 22,
-      src: img3,
-      number: 322
-    },
-    {
-      name: "Champion",
-      rank: 22,
-      src: img3,
-      number: 322
-    }
-  ]
   return (
-    <div className="appBG d-flex justify-content-center">
-      <div className="gameRankCard d-flex justify-content-center align-item-center"><GameRankCard cards={dataTosend} src={img1} /></div>
-    </div>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<QuestBoard />} />
+        <Route exact path="/goblin_attack" element={<GoblinAttack />} />
+        <Route exact path="/quest_sucess" element={<Questsucess />} />
+        <Route exact path="/quest_greatesucess" element={<QuestGreatsucess />} />
+        <Route exact path="/quest_failure" element={<QuestFailure />} />
+        <Route exact path="/quest_inprogress" element={<QuestProgress />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

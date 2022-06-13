@@ -5,7 +5,7 @@
 }
 
 .main_grid_player{
-  /*background: linear-gradient(180deg, #8E411D 0%, #FDAF57 45%);*/
+  background: linear-gradient(180deg, #8E411D 0%, #FDAF57 45%);
   border: 2px solid #000000;
   box-shadow: 0px 4px 0px #000000;
   border-radius: 20px;

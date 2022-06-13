@@ -1,13 +1,17 @@
 // import react from 'react'
 import './style.css'
-import img1 from '../assets/left.png'
+import img1 from '../../assets/left.png'
 import PlayerCard from './playerCard'
 import Dropdown from './dropdown.js'
 import Cardtask from './cardTask.js' 
-import img from '../assets/7.png'
-import hourglass from '../assets/Hourglass.png'
+import img from '../../assets/7.png'
+import hourglass from '../../assets/Hourglass.png'
+// /expenses 
+import { useNavigate } from "react-router-dom";
 
-const playerCard = (props) => {
+const CardforP = (props) => {
+	const navigate = useNavigate();
+	const arr = [1, 1, 1, 1, 1, 1]
 	return(
 		<div className="bg-gradient-to-b from-orange-600 to-orange-400 absolute top-14 h-3/4 w-11/12 rounded-2xl p-5 mx-5 overflow-y-auto">
 			<div className='flex justify-between'>
@@ -21,15 +25,18 @@ const playerCard = (props) => {
 				</div>
 			</div>
 			<div className="mt-2 grid grid-cols-4 gap-4">
-				<Cardtask img={img} hourglass={hourglass} status="Completed" time="05 : 36 : 60"/>
-				<Cardtask img={img} hourglass={hourglass} status="Completed" time="05 : 36 : 60"/>
-				<Cardtask img={img} hourglass={hourglass} status="Completed" time="05 : 36 : 60"/>
-				<Cardtask img={img} hourglass={hourglass} status="Completed" time="05 : 36 : 60"/>
-				<Cardtask img={img} hourglass={hourglass} status="Completed" time="05 : 36 : 60"/>
-				<Cardtask img={img} hourglass={hourglass} status="Completed" time="05 : 36 : 60"/>
+				{
+					arr.map((val, index) => {
+						return (
+							<div onClick={() => navigate('/goblin_attack')} key = {index} className="cursor-pointer">
+								<Cardtask img={img} hourglass={hourglass} status="Completed" time="05 : 36 : 60"/>
+							</div>
+						)
+					})
+				}
 			</div>
 		</div>
 	);
 }
 
-export default playerCard;
+export default CardforP;
