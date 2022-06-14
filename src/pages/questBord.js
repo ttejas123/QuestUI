@@ -19,7 +19,7 @@ function App() {
         <img src={cross} className='absolute w-10 right-2 top-2 hover:opacity-80 cursor-pointer'/>
         <GameRankCard className="pt-5" src={img1} />
         
-        <div className="bg-neutral-900 absolute w-full rounded-b-xl md:h-[18%]  bottom-0 md:flex justify-between items-center px-[4%]">
+        <div className="bg-neutral-900 absolute w-full rounded-b-xl md:h-[18%]  bottom-0 md:flex justify-between items-center px-[4%] py-2 md:py-0">
           <div className='flex items-center justify-center md:justify-start items-center'>
             <h1 className="style-sm-font text-xl md:text-3xl xl:text-4xl 2xl:text-7xl text-white bg-red">Time until reset</h1>
             <div className='time-by-hour-to-sec flex justify-center items-center ml-1 md:ml-5'>
@@ -31,7 +31,7 @@ function App() {
             </div>
           </div>
           <div className=' bg-red flex justify-center md:justify-end md:items-center  h-[10%] w-full md:w-[26%] md:h-[99%] lg:w-[21%] lg:h-[99%]  2xl:w-[24%] 2xl:h-[100%]'>
-            <img src={resetFox} className='w-[40%] md:w-full h-full'/>
+            <img src={resetFox} className='w-[50%] md:w-full h-full'/>
           </div>
         </div>
 
