@@ -33,7 +33,7 @@ function App() {
       <div className={`w-full h-screen bg-black opacity-50 z-30 absolute ${visible1 ? "" : "hidden"} `}></div>
       <div className={`w-full h-screen bg-black opacity-50 z-30 absolute  ${Fox ? "" : "hidden"}`}></div>
       <div className={`w-full h-screen bg-black opacity-50 z-30 absolute  ${Reward ? "" : "hidden"}`}></div>
-      <img src={cross} onClick={() => navigate('/')} className='absolute top-3 z-10 w-12 right-10 top-5 hover:opacity-80 cursor-pointer'/>
+      <img src={cross} onClick={() => navigate('/')} className='absolute z-10 w-12 right-0 top-5 md:right-3 lg:right-5 xl:right-10 hover:opacity-80 cursor-pointer'/>
       
       {/* main game card */}
       <div className="w-11/12 h-full rounded-2xl relative flex justify-center my-5 py-5">
