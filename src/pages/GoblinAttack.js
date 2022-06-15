@@ -46,21 +46,21 @@ function App() {
       {/* items */}
       <div className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer font-extrabold text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-white z-50 top-[17%] md:top-[5.5%] right-[50%] outline-title ${visible1 ? "" : "hidden"}`}>Items</div>
       <img onClick={() => setvisible(!visible1)} src={cross} className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer z-50 top-[15%] md:top-[6.5%] right-[0%] md:right-[5%] lg:right-[11%] xl:right-[15%] ${visible1 ? "" : "hidden"}`}/>
-      <div className={`w-11/12 h-3/5 md:w-10/12 md:h-4/5 lg:w-9/12 lg:h-4/5 xl:w-8/12 xl:h-4/5 bg-[#000000] rounded-2xl flex justify-center absolute top-[20%] z-40 ${visible1 ? "" : "hidden"}`}>
+      <div className={`w-11/12 h-3/5 md:w-10/12 md:h-4/5 lg:w-9/12 lg:h-4/5 xl:w-8/12 xl:h-4/5 bg-[#000000] rounded-2xl flex justify-center absolute top-[20%] md:top-[10%] z-40 ${visible1 ? "" : "hidden"}`}>
         <Items className="pt-5" img={img} title="Goblin  Attack  On The  South  Village" legd="SUCCESS" para={para} last_text="Claim  Rewards" color="text-lime-400" border="border-lime-400" bg="bg-lime-100" />
       </div>
 
       {/* foxs */}
-      <div className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer font-extrabold  text-4xl text-white z-50 top-[5.5%] right-[50%] outline-title ${Fox ? "" : "hidden"}`}>Foxes</div>
-      <img onClick={() => setFox(!Fox)} src={cross} className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer z-50 top-[6.5%] right-[15%] ${Fox ? "" : "hidden"}`}/>
-      <div className={`w-8/12 h-4/5 bg-[#000000] rounded-2xl flex justify-center absolute top-[10%] z-40 ${Fox ? "" : "hidden"}`}>
+      <div className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer font-extrabold text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-white z-50 top-[17%] md:top-[5.5%] right-[50%] outline-title ${Fox ? "" : "hidden"}`}>Foxes</div>
+      <img onClick={() => setFox(!Fox)} src={cross} className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer z-50 top-[15%] md:top-[6.5%] right-[0%] md:right-[5%] lg:right-[11%] xl:right-[15%] ${Fox ? "" : "hidden"}`}/>
+      <div className={`w-11/12 h-3/5 md:w-10/12 md:h-4/5 lg:w-9/12 lg:h-4/5 xl:w-8/12 xl:h-4/5 bg-[#000000] rounded-2xl flex justify-center absolute top-[20%] md:top-[10%] z-40 ${Fox ? "" : "hidden"}`}>
         <Foxs className="pt-5" img={img} title="Goblin  Attack  On The  South  Village" legd="SUCCESS" para={para} last_text="Claim  Rewards" color="text-lime-400" border="border-lime-400" bg="bg-lime-100" />
       </div>
 
       {/* Rewards */}
-      <div className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer font-extrabold  text-4xl text-white z-50 top-[5.5%] right-[50%] outline-title ${Reward ? "" : "hidden"}`}>Rewards</div>
-      <img onClick={() => setReward(!Reward)} src={cross} className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer z-50 top-[6.5%] right-[15%] ${Reward ? "" : "hidden"}`}/>
-      <div className={`w-8/12 h-4/5 bg-[#000000] rounded-2xl flex justify-center absolute top-[10%] z-40 ${Reward ? "" : "hidden"}`}>
+      <div className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer font-extrabold text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-white z-50 top-[17%] md:top-[5.5%] right-[50%] outline-title ${Reward ? "" : "hidden"}`}>Rewards</div>
+      <img onClick={() => setReward(!Reward)} src={cross} className={`absolute z-10 w-12 hover:opacity-80 cursor-pointer z-50 top-[15%] md:top-[6.5%] right-[0%] md:right-[5%] lg:right-[11%] xl:right-[15%] ${Reward ? "" : "hidden"}`}/>
+      <div className={`w-11/12 h-3/5 md:w-10/12 md:h-4/5 lg:w-9/12 lg:h-4/5 xl:w-8/12 xl:h-4/5 bg-[#000000] rounded-2xl flex justify-center absolute top-[20%] md:top-[10%] z-40 ${Reward ? "" : "hidden"}`}>
         <Rewards className="pt-5" img={img} title="Goblin  Attack  On The  South  Village" legd="SUCCESS" para={para} last_text="Claim  Rewards" color="text-lime-400" border="border-lime-400" bg="bg-lime-100" />
       </div>
 
